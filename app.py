@@ -41,7 +41,7 @@ with open('model.pkl','rb')as f:
     model=pickle.load(f)
 
 with open('data.pkl','rb')as f:
-    data=pickle.load(f)
+     data = pd.read_pickle(f)
 
 def predict(State,District,Season,Area):
     state=mapping_dict['State'][State]
